@@ -1,9 +1,10 @@
 import { Nav } from "../components/NavigationBar"
 
-export const Home = () => {
+export const Home = ({ darkMode, setDarkMode }) => {
     return (
         <div>
-            <Nav />
+            <Nav darkMode={darkMode} setDarkMode={setDarkMode}/>
+            <div>{darkMode ? "dark" : "light"}</div>
         </div>
     )
 }
