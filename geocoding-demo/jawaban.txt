@@ -1,0 +1,12 @@
+Apa yang Anda ketahui tentang ReactJS?
+* ReactJS adalah development library berbasis javascript. diantara semua library dan framework javascript yang ada, ReactJS adalah library yang paling tidak berpendapat (non-opinionated) yang membuat ReactJS sangat fleksibel.
+
+Apakah yang dimaksud dengan Asynchronous?
+* Asynchronous adalah proses yang terjadi secara tidak bersama-sama
+
+Bagaimana menerapkan Asynchronous pada ReactJs?
+* const var = async () => {
+    try {
+        const var2 = await ...
+    } catch (err) {}
+}

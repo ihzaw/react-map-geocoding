@@ -24,7 +24,6 @@ export const LeftBar = ({ setLngLat }) => {
         animate={open ? "open" : "close"}
         className="absolute border-[#19817c] border-b border-r text-xs text-left text-[#19817c] bg-white dark:bg-slate-800 dark:text-white w-60 h-auto left-0 top-16 rounded-lg shadow-sm shadow-gray-700 flex-row justify-center p-4"
       >
-        {/* <div>{`${open}`}</div> */}
         <div
           className="absolute right-2 top-2 w-auto h-auto cursor-pointer"
           onClick={() => (open ? setOpen(false) : setOpen(true))}
