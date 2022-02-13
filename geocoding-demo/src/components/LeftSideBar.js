@@ -4,11 +4,12 @@ import { AnimatePresence, motion } from "framer-motion";
 import { useSelector } from "react-redux";
 import { PointOfInterest } from "./PointOfInterest";
 
-export const LeftBar = () => {
+export const LeftBar = ({ setLngLat }) => {
   const [open, setOpen] = useState(true);
+  const places = useSelector((state) => state.places);
   const darkmode = useSelector((state) => state.darkmode);
   const variants = {
-    close: { x: -210 },
+    close: { x: -200 },
     open: { x: 0 },
     unShowOption: { opacity: 0 },
     showOption: { opacity: 1 },
@@ -17,10 +18,11 @@ export const LeftBar = () => {
   return (
     <div>
       <motion.div
+        id="left-bar"
         initial={false}
         variants={variants}
         animate={open ? "open" : "close"}
-        className="absolute border-[#19817c] border-b border-r text-base text-[#19817c] bg-white dark:bg-slate-800 dark:text-white w-60 h-1/2 left-4 top-20 rounded-lg shadow-sm shadow-gray-700 flex-row justify-center p-4"
+        className="absolute border-[#19817c] border-b border-r text-xs text-left text-[#19817c] bg-white dark:bg-slate-800 dark:text-white w-60 h-auto left-0 top-16 rounded-lg shadow-sm shadow-gray-700 flex-row justify-center p-4"
       >
         {/* <div>{`${open}`}</div> */}
         <div
@@ -34,7 +36,16 @@ export const LeftBar = () => {
           animate={open ? "showOption" : "unShowOption"}
           transition={{ delay: 0.2 }}
         >
-          <PointOfInterest />
+          {places.map((place) => {
+            console.log(place.lng, place.lat);
+            return (
+              <PointOfInterest
+                key={place.name}
+                place={place}
+                setLngLat={setLngLat}
+              />
+            );
+          })}
         </motion.div>
       </motion.div>
     </div>
