@@ -5,7 +5,6 @@ import { useSelector } from "react-redux";
 
 export const Nav = () => {
   const darkMode = useSelector((state) => state.darkMode)
-  
   return (
     <>
       {!darkMode && <motion.div
