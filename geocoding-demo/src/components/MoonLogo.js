@@ -12,7 +12,7 @@ export const Moon = ({ darkMode }) => {
           class="h-6 w-6"
           fill="none"
           viewBox="0 0 24 24"
-          stroke="#19817c"
+          stroke="#b9d8d7"
         >
           <path
             stroke-linecap="round"
@@ -30,7 +30,7 @@ export const Moon = ({ darkMode }) => {
           xmlns="http://www.w3.org/2000/svg"
           class="h-6 w-6"
           viewBox="0 0 20 20"
-          fill="#19817c"
+          fill="#b9d8d7"
         >
           <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" />
         </motion.svg>

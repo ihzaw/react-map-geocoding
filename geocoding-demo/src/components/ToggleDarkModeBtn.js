@@ -20,7 +20,7 @@ export const ToggleDarkModeBtn = () => {
   
   return (
     <motion.div
-      className="flex rounded-full justify-between items-center w-20 h-10 border-2 px-1 border-[#19817c] cursor-pointer"
+      className="flex rounded-full justify-between items-center w-20 h-10 border-2 px-1 border-[#b9d8d7] cursor-pointer"
       onClick={() => handleClick(darkMode ? false : true)}
     >
       <SunLogo darkMode={darkMode} />

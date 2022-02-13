@@ -9,12 +9,12 @@ export const Nav = () => {
     <>
       {!darkMode && <motion.div
         initial={false}
-        className="grid grid-cols-3 h-16"
+        className="grid grid-cols-3 h-16 "
         initial={{ backgroundColor: "#0f172a" }}
-        animate={{ backgroundColor: "#ffffff", transition: {duration: 0.5} }}
+        animate={{ backgroundColor: "#246d69", transition: {duration: 0.5} }}
         exit={{ backgroundColor: "#0f172a" }}
       >
-        <div className="grid grid-cols-2 col-span-2 items-center px-4 font-bold text-slate-900">
+        <div className="grid grid-cols-2 col-span-2 items-center px-4 font-bold text-[#b9d8d7]">
           <ToggleDarkModeBtn/>
           <LanguageSwitcher />
         </div>
@@ -22,11 +22,11 @@ export const Nav = () => {
       {darkMode && <motion.div
         initial={false}
         className="grid grid-cols-3 h-16"
-        initial={{ backgroundColor: "#ffffff" }}
+        initial={{ backgroundColor: "#246d69" }}
         animate={{ backgroundColor: "#0f172a", transition: {duration: 0.5} }}
-        exit={{ backgroundColor: "#ffffff" }}
+        exit={{ backgroundColor: "#246d69" }}
       >
-        <div className="grid grid-cols-2 col-span-2 items-center px-4 font-bold text-[#19817c]">
+        <div className="grid grid-cols-2 col-span-2 items-center px-4 font-bold text-[#b9d8d7]">
           <ToggleDarkModeBtn/>
           <LanguageSwitcher />
         </div>

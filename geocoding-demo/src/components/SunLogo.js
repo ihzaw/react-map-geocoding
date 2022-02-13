@@ -10,7 +10,7 @@ export const SunLogo = ({ darkMode }) => {
             xmlns="http://www.w3.org/2000/svg"
             className="h-6 w-6"
             viewBox="0 0 20 20"
-            fill="#19817c"
+            fill="#b9d8d7"
           >
             <path
               fill-rule="evenodd"
@@ -26,7 +26,7 @@ export const SunLogo = ({ darkMode }) => {
             className="h-6 w-6"
             fill="none"
             viewBox="0 0 24 24"
-            stroke="#19817c"
+            stroke="#b9d8d7"
           >
             <path
               stroke-linecap="round"

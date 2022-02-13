@@ -3,11 +3,11 @@ import { Map } from "../components/Map";
 import { LeftBar } from "../components/LeftSideBar";
 import { RightBar } from "../components/RightSideBar";
 
-export const Home = ({ darkMode, setDarkMode }) => {
+export const Home = () => {
   return (
-    <div>
-      <Nav/>
-      <Map/>
+    <div className="overflow-hidden">
+      <Nav />
+      <Map />
       <LeftBar />
       <RightBar />
     </div>
