@@ -21,7 +21,7 @@ export const Map = () => {
     if (map.current) return;
     map.current = new mapboxgl.Map({
       container: mapContainer.current,
-      style: lightMap,
+      style: darkMode ? darkMap : lightMap,
       center: [lng, lat],
       zoom: zoom,
     });
@@ -38,7 +38,6 @@ export const Map = () => {
   return (
     <div className="flex justify-center h-[90vh] w-screen">
       <div id="map" ref={mapContainer}></div>;
-      <button className="bg-blue-100 p-4 absolute">test</button>
     </div>
   );
 };

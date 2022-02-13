@@ -1,10 +1,10 @@
 import { useState } from "react";
 import { Menu } from "./MenuIcon";
-import { AnimatePresence, motion } from "framer-motion";
+import { motion } from "framer-motion";
 import { useSelector } from "react-redux";
 import { PointOfInterest } from "./PointOfInterest";
 
-export const LeftBar = () => {
+export const RightBar = () => {
   const [open, setOpen] = useState(true);
   const darkmode = useSelector((state) => state.darkmode);
   const variants = {
@@ -20,7 +20,7 @@ export const LeftBar = () => {
         initial={false}
         variants={variants}
         animate={open ? "open" : "close"}
-        className="absolute border-[#19817c] border-b border-r text-base text-[#19817c] bg-white dark:bg-slate-800 dark:text-white w-60 h-1/2 left-4 top-20 rounded-lg shadow-sm shadow-gray-700 flex-row justify-center p-4"
+        className="absolute border-[#19817c] border-b border-r text-base text-[#19817c] bg-white dark:bg-slate-800 dark:text-white w-60 h-1/2 right-4 top-20 rounded-lg shadow-sm shadow-gray-700 flex-row justify-center p-4"
       >
         {/* <div>{`${open}`}</div> */}
         <div

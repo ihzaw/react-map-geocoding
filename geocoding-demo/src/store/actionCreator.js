@@ -6,5 +6,6 @@ export const setDarkMode = (payload) => {
             type: SET_DARK_MODE,
             payload
         })
+        localStorage.setItem("theme", payload ? "dark" : "light")
     }
 }
