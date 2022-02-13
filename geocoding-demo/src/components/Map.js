@@ -1,8 +1,10 @@
 import "../App.css";
 import mapboxgl from "mapbox-gl";
 import { useState, useRef, useEffect } from "react";
+import { useSelector } from "react-redux";
 
-export const Map = ({ darkMode, setDarkMode }) => {
+export const Map = () => {
+  const darkMode = useSelector((state) => state.darkMode)
   const lightMap = "mapbox://styles/mapbox/streets-v11";
   const darkMap = "mapbox://styles/ihzanantama/ckzh2aucc000l15o9xvf0twvs";
   const mapContainer = useRef(null);

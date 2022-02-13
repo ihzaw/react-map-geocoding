@@ -8,6 +8,8 @@
 }
 
 .marker {
+  background-image: url('https://w7.pngwing.com/pngs/731/25/png-transparent-location-icon-computer-icons-google-map-maker-marker-pen-cartodb-map-marker-heart-logo-color-thumbnail.png');
+  background-size: cover;
   width: 50px;
   height: 50px;
   border-radius: 50%;
