@@ -12,7 +12,7 @@ export const Nav = ({ darkMode, setDarkMode }) => {
         animate={{ backgroundColor: "#ffffff", transition: {duration: 0.5} }}
         exit={{ backgroundColor: "#0f172a" }}
       >
-        <div className="mb-4 grid grid-cols-2 col-span-2 items-center px-4 font-bold text-slate-900">
+        <div className="grid grid-cols-2 col-span-2 items-center px-4 font-bold text-slate-900">
           <ToggleDarkModeBtn setDarkMode={setDarkMode} darkMode={darkMode} />
           <LanguageSwitcher />
         </div>
